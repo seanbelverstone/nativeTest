@@ -1,16 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import HelloWorld from "./HelloWorld";
+import HelloWorld from "./components/HelloWorld";
+import LotsOfGreetings from "./components/Greeting";
+import BlinkApp from "./components/Blink";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>
-        dwa
-        dwa
-      </Text>
       <Text>Open up App.js to start working on your app!</Text>
       <HelloWorld />
+      <LotsOfGreetings />
+      <BlinkApp />
     </View>
   );
 }
@@ -18,7 +18,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#555',
     alignItems: 'center',
     justifyContent: 'center',
   },
